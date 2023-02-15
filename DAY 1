@@ -3,6 +3,7 @@ Harsh was recently gifted a book consisting of N pages. Each page contains exact
 
 
 SOLUTION 1 [c]
+--------------
 #include <stdio.h>
 int main(void) {
 	int t;
@@ -17,12 +18,14 @@ int main(void) {
 }
 
 SOLUTION 2 [PYTHON]
+-------------------
 t=int(input( ))
 for i in range(t):
     N,M=map(int,input( ).split( ))
     print(N*M)
 
 SOLUTION 3 [JAVA]
+-----------------
 import java.util.*;
 import java.lang.*;
 import java.io.*;
