@@ -1,10 +1,9 @@
 #QUESTON
 Harsh was recently gifted a book consisting of N pages. Each page contains exactly M words printed on it. As he was bored, he decided to count the number of words in the book.Help Harsh find the total number of words in the book.
 
-#SOLUTION 1 [c]
 
+SOLUTION 1 [c]
 #include <stdio.h>
-
 int main(void) {
 	int t;
 	scanf("%d",&t);
@@ -17,4 +16,28 @@ int main(void) {
 	return 0;
 }
 
+SOLUTION 2 [PYTHON]
+t=int(input( ))
+for i in range(t):
+    N,M=map(int,input( ).split( ))
+    print(N*M)
+
+SOLUTION 3 [JAVA]
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t!=0){
+		    int a=sc.nextInt();
+		    int b=sc.nextInt();
+		    System.out.println(a*b);
+		    t=t-1;
+		}
+	}
+}
 
