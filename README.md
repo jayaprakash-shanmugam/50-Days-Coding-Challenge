@@ -1,1 +1,1 @@
-# 50-Days-Coding-Challenge
+Solving Problems from beginner to advanced
