@@ -1,1 +1,1 @@
-Solving Problems from beginner to advanced
+Solving Problems in Java/C/python from beginner to advanced
