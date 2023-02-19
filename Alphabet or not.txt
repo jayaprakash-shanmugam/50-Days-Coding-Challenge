@@ -1,0 +1,34 @@
+[PROBLEM] : Take an input character from the user and check whether the given input is a alphabet or not. 
+Input : A Output : alphabet 
+Input : m Output : alphabet 
+Input : 3 Output : not an alphabet
+
+SOLUTION [JAVA]
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		char c=sc.next().charAt(0);
+		if((c>=65 && c<=90)||(c>=97 && c<=122))
+		System.out.println("alphabet");
+		else
+		System.out.println("not an alphabet");
+	}
+}
+
+
+SOLUTION [C]
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    char c;
+    scanf("%c",&c);
+    if((c>=65 && c<=90)||(c>=97 && c<=122))
+    printf("alphabet");
+    else
+    printf("not an alphabet");
+}
