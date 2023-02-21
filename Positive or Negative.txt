@@ -1,0 +1,38 @@
+[PROBLEM] :  Get an input number from the user and check whether it is a positive or negative number. 
+Input : -10 Output : Negative number 
+Input : 0 Output : Neither positive nor negative 
+Input : 15 Output : Positive number
+
+
+SOLUTION [JAVA]
+
+import java.util.*;
+class Main
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		if(a>0)
+		System.out.println("Positive number");
+		else if(a<0)
+		System.out.println("Negative number");
+		else if(a==0)
+		System.out.println("Neither Positive nor negative");
+	}
+}
+
+SOLUTION [C]
+
+#include <stdio.h>
+int main()
+{
+	int a;
+	scanf("%d",&a);
+	if(a>0)
+	printf("Positive number");
+	else if(a<0)
+	printf("Negative number");
+	else if(a==0)
+	printf("Neither Positive nor negative");
+}
