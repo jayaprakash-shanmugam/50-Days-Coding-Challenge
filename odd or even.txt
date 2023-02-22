@@ -1,0 +1,33 @@
+Get a number as input from the user and check whether the given number is odd or even.
+Input : 10 Output : Even 
+Input : 5 Output : Odd
+
+SOLUTION [JAVA]
+
+import java.util.*;
+class Main
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		if(a%2==0)
+		System.out.println("Even");
+		else
+		System.out.println("Odd);
+	}
+}
+
+
+SOLUTION [C]
+
+#include <stdio.h>
+int main()
+{
+	int a;
+	scanf("%d",&a);
+	if(a%2==0)
+	printf("Even");
+	else
+	printf("Odd");
+}
