@@ -1,0 +1,25 @@
+[PROBLEM] : Get the value of x and y coordinates as input from the user and check in which quadrant the point lies and print it. Input : 10 20 Output : This point lies in first quadrant. 
+Input : -10 20 Output : This point lies in second quadrant.
+
+SOLUTION [C]
+
+#include <stdio.h>
+int main()
+{
+int a,b;
+scanf("%d %d",&a,&b);
+if(a==0 &&b==0)
+printf("This is orgin");
+else if(a>0 &&b>0)
+printf("This point lies in 1 st quadrant");
+else if(a>0 &&b<0)
+printf("This point lies in 4 th quadrant");
+else if(a<0 &&b>0)
+printf("This point lies in 2 nd quadrant");
+else if(a<0 &&b<0)
+printf("This point lies in 3 rd quadrant");
+else if(a==0 &&b<0 || a==0 &&b>0)
+printf("Y-axis");
+else if(b==0 &&a<0 || b==0 &&a>0)
+printf("X-axis");
+}
