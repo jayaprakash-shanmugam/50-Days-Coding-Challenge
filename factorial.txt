@@ -1,0 +1,28 @@
+[PROBLEM] : Get the input from the user for the value of n and then find the sum of first n natural numbers. e.g. let the n value = 5 Then first 5 natural numbers are 1,2,3,4,5 for which we need to find the sum. 
+Input : 4 (1+2+3+4) Output : 10
+Input : 2 (1+2) Output : 3
+
+SOLUTION [C]
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    int sum=0;
+    for(int i=1;i<=num;i++)
+    {
+        sum=sum+i;
+    }
+    printf("%d",sum);
+}
+
+
+SOLUTION [PYTHON]
+
+a=int(input())
+sum=0
+while(a):
+    sum=sum+a
+    a=a-1
+print(sum)
