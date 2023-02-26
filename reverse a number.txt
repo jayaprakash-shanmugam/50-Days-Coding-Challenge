@@ -1,0 +1,20 @@
+[PROBLEM] : Get an input from the user and the print the reverse of the given number as the output. E.g. let the number be 324 then the reverse of the number is 423 
+Input : 675 Output : 576
+
+
+
+SOLUTION [C]
+
+#include<stdio.h>
+int main()
+{
+    int num,dig,rem=0;
+    scanf("%d",&num);
+    while(num)
+    {
+        dig = num%10;
+        rem = rem*10 + dig;
+        num = num/10;
+    }
+    printf("%d",rem);
+}
