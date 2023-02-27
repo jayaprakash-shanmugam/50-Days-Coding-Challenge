@@ -1,0 +1,43 @@
+[PROBLEM] : Get a number as input from user and then check whether that number is a strong number or not. A number is said to be strong number if the sum of the factorial of each digit in the number is same as that of the number. E.g. let the number be 145 Here 1! + 4! + 5! is 1 + 24 + 120 which is equal to 145 itself.
+Input : 121 Output : Not a strong number 
+Input : 2 Output : Strong number
+
+SOLUTION [C]
+
+#include <stdio.h>
+#include <stdlib.h>
+int fact(int dig)
+{
+    if(dig==0 || dig == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return dig*fact(dig-1);
+    }
+}
+int isStrong(int n)
+{
+    int dig,sum=0;
+    while(n)
+    {
+        dig = n%10;
+        n = n/10;
+        sum = sum+fact(dig);
+    }
+    return sum;
+}
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    if(isStrong(num)==num)
+    {
+        printf("Strong Number");
+    }
+    else
+    {
+        printf("Not a Strong Number");
+    }
+}
