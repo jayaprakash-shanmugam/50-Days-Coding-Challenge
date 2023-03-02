@@ -1,0 +1,32 @@
+[PROBLEM] : Get a input from an user and find the factor of the number
+Input : 4  Output :  1 2 4
+
+SOLUTION [C]:
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int input;
+    scanf("%d",&input);
+    for(int i=1;i<=input;i++)
+    {
+        if(input%i==0)
+        {
+            printf("%d ",i);
+        }
+        
+    }
+    
+
+    return 0;
+}
+
+
+SOLUTION [PYTHON]:
+
+input=int(input())
+for i in range(1,input+1):
+    if(input%i==0):
+        print(i,end=" ")
+
