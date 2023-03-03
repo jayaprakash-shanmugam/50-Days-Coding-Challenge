@@ -1,0 +1,27 @@
+[PROBLEM] : Get a number from user and check whether the number or not
+Input : 6 (1,2,3,6) Output : not a prime number
+Input : 7 (1,7)     Output : prime number
+
+SOLUTION [C]
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int count=0;
+    
+    for(int i=2;i<=sqrt(a);i++)
+    {
+        if(a%i==0)
+        {
+            count++;
+            break;
+        }
+    }
+    if(count==0)
+    printf("prime number");
+    else
+    printf("not a prime number");
+}
