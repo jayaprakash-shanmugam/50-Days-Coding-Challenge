@@ -1,0 +1,28 @@
+[PROBLEM] : Get a number from user and find whether the given number is palindrome or not
+Input : 121  Output : palindrome
+Input : 12   Output : not a palindrome
+
+
+SOLUTION [C]
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int digit=0,sum=0;
+    int temp=a;
+    while(a)
+    {
+        digit=a%10;
+        sum=sum*10+digit;
+        a=a/10;
+        
+    }
+    if(sum==temp)
+    printf("palindrome");
+    else
+    printf("not a palindrome");
+    return 0;
+}
