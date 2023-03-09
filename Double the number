@@ -1,0 +1,11 @@
+[PROBLEM] : Get a number from the user and find the double of the number without arithmatic operations
+Input : 2 Output : 4
+
+SOLUTION [C] :
+ #include <stdio.h>
+ int main()
+ {
+    int a;
+    scanf("%d",&a);
+    printf(a<<1);
+ }
