@@ -1,0 +1,19 @@
+[PROBLRM] : Get two strings as input from the user and then concatenate it.
+Input: Enter first string : Hello 
+       Enter second string : Hi 
+Output : HelloHi
+
+SOLUTION [JAVA]
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    String str1=sc.nextLine();
+	    String str2=sc.nextLine();
+	    String new_str=str1.concat(str2);
+		System.out.println(new_str);
+	}
+}
