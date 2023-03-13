@@ -1,0 +1,39 @@
+[PROBLEM] :  Get a string as input from user and print the length of the string without using strlen() function. 
+Input : Hello Output : 5
+
+SOLUTION [JAVA] : 
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+		String str1=str + "\0";
+		char [] c=str.toCharArray();
+		int len=0;
+		for(int i=0;str1.charAt(i) != '\0';i++)
+        {
+            len++;
+        }
+		System.out.print(len);
+	}
+}
+
+
+SOLUTION [C]
+
+#include <stdio.h>
+int main()
+{
+  char str[100];
+  scanf("%s",&str);
+  int i=0;
+  while(str[i]!='\0')
+  {
+    i++;
+  }
+  printf("%d",i);
+  return 0;
+ }
