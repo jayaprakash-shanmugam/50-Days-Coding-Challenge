@@ -1,0 +1,22 @@
+[PROBLEM] : Get a string as the input from the user and then remove all the vowel letters from the string and give the output. 
+Input : output Output : tpt
+
+SOLUTI0N : [JAVA]
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    String str=sc.nextLine();
+	    char[] arr=str.toCharArray();
+	    for(int i=0;i<str.length();i++)
+		{
+		    if(arr[i]!='a' && arr[i]!='A' && arr[i]!='e' && arr[i]!='E' && arr[i]!='i' && arr[i]!='I' && arr[i]!='o' && arr[i]!='O' && arr[i]!='u' && arr[i]!='U')
+		    {
+		        System.out.print(arr[i]);
+		    }
+		}
+	}
+}
+
