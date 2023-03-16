@@ -1,0 +1,25 @@
+[PROBLEM] :  Get an input string from the user and then check whether it is a palindrome string or not. 
+Input : noon Output : Palindrome 
+Input : Talent Output : Not a Palindrome
+
+
+SOLUTION [JAVA] : 
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str1=sc.nextLine();
+        StringBuilder str2=new StringBuilder (str1);
+        str2.reverse();
+        String str3=new String(str2);
+        if(str1.equals(str3))
+        {
+            System.out.println("palindrome");
+        }
+        else
+        {
+            System.out.println("not a palindrome");
+        }
+    }
+}
