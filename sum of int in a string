@@ -1,0 +1,21 @@
+[PROBLEM] : Get a string from the user and find the sum of numbers in the string.
+Input : Hello56 Output : 11
+
+SOLUTION [JAVA]
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String str="dfg056";
+        int add=0;
+        char[] arr = str.toCharArray();
+        for(char c : arr)
+        {
+            if(Character.isDigit(c))
+            {
+                int num=c-48;
+                add=add+num;
+            }
+        }
+        System.out.println(add);
+    }
+}
