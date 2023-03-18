@@ -1,12 +1,12 @@
 [PROBLEM] :  Get a string as the input from the user and print the non-repeating characters in a string. 
-Input : Hello Output : H e o
+Input : Hello Output : Heo
 
 SOLUTION [JAVA]
 
 import java.util.*;
 class HelloWorld {
     public static void main(String[] args) {
-        String str="hehellooj";
+        String str="hello";
         int count=0;
         String str1="";
         char[] arr=str.toCharArray();
