@@ -1,0 +1,19 @@
+[PROBLEM] : Get a string as input from the user and then get another string which has to be removed from the string. Get the third input, the new substring which is placed in that substring position. Finally print the output by replacing the substring with new string. 
+Input : Enter a string : Monday 
+Enter the substring to be removed : Mon 
+Enter the new substring : Tue 
+Output : The new string : Tuesday
+
+SOLUTION [JAVA]:
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        String del=sc.nextLine();
+        String sub=sc.nextLine();
+        String str_new=str.replace(del,sub);
+        System.out.println(str_new);
+    }
+}
