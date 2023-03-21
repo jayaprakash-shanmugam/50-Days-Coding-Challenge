@@ -1,0 +1,38 @@
+[PROBLEM] : Get two arrays as the input from the user and check whether it is the same or not. 
+Input : 
+    Enter the size of first array : 3 
+    Enter the size of second array : 2 
+    Enter elements of first array : 1 2 3 
+    Enter elements of second array : 1 2 
+    Output :Not same
+
+
+SOLUTION [JAVA] : 
+
+import java.util.*;
+import java.util.Arrays;
+class HelloWorld 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int[] arr1=new int[a];
+        int[] arr2=new int[b];
+        System.out.println("enter arr1"); 
+        for(int i=0;i<a;i++)
+        {
+            arr1[i]=sc.nextInt();
+        }
+        System.out.println("enter arr2"); 
+        for(int i=0;i<b;i++)
+        {
+            arr2[i]=sc.nextInt();
+        }
+        if(Arrays.equals(arr1,arr2))
+        System.out.println("Same");
+        else
+        System.out.println("Not same");
+    }
+}
