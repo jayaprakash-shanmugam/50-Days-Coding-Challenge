@@ -1,0 +1,35 @@
+[PROBLEM] : Get an array as input from the user and check the type of the array, whether it is odd, even or mixed type. 
+Input : Enter size of array : 3 
+Enter elements : 2 4 6 
+Output : Even type array
+
+SOLUTION [JAVA]:
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("size of array");
+        int size=sc.nextInt();
+        System.out.println("enter array values");
+        int[] arr1=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            arr1[i]=sc.nextInt();
+        }
+        int odd=0,even=0;
+        for(int i=0;i<arr1.length;i++)
+        {
+            if(arr1[i]%2==0)
+            even++;
+            else
+            odd++;
+        }
+        if(even==arr1.length)
+        System.out.println("even type array");
+        else if(odd==arr1.length)
+        System.out.println("odd type array");
+        else
+        System.out.println("mixed type array");
+    }
+}
