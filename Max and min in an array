@@ -1,0 +1,36 @@
+[ PROBLEM ] : Get an array as input from the user and then find the smallest and largest element in the array. 
+Input : 
+  Enter the size of array : 5 
+  Enter the elements : 10 20 5 40 30 
+Output : 
+  Maximum element : 40
+  Minimum element : 5
+
+SOLUTION [JAVA]
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("size of array");
+        int size=sc.nextInt();
+        System.out.println("enter array values");
+        int[] arr1=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            arr1[i]=sc.nextInt();
+        }
+        int max=arr1[0],min=arr1[0];
+        for(int i=1;i<arr1.length;i++)
+        {
+            if(arr1[i]>max)
+            max=arr1[i];
+            if(arr1[i]<min)
+            min=arr1[i];
+            
+        }
+        System.out.println("Maximum element  : " + max);
+        System.out.println("Minimum element  : " + min);
+
+    }
+}
