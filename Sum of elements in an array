@@ -1,0 +1,30 @@
+[PROBLEM] :  Get an array as the input from the user and find the sum of the elements. 
+Input : 
+    Enter the size of array : 4 
+    Enter the elements of array : 1 2 3 4
+Output : 10
+
+SOLUTION [JAVA] : 
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int sum=0;
+        System.out.println("size of array");
+        int size=sc.nextInt();
+        System.out.println("enter array values");
+        int[] arr1=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            arr1[i]=sc.nextInt();
+        }
+        int max=arr1[0],min=arr1[0];
+        for(int i=0;i<arr1.length;i++)
+        {
+            sum=sum+arr1[i];
+        }
+        System.out.println(sum);
+
+    }
+}
