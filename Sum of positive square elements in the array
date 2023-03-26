@@ -1,0 +1,29 @@
+[PROBLEM] : Given an integer array of size N. Write Program to find sum of positive square elements in the array.
+Input 1 :
+    Size of array : 4 
+    Array elements: 1 2 3 4 
+Output 1 : 30(1 + 4 + 9 + 16) = 30
+
+SOLUTION [JAVA] : 
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int sum=0;
+        System.out.println("size of array");
+        int size=sc.nextInt();
+        System.out.println("enter array values");
+        int[] arr1=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            arr1[i]=sc.nextInt();
+        }
+        for(int i=0;i<arr1.length;i++)
+        {
+            sum=sum+arr1[i]*arr1[i];
+        }
+        System.out.println(sum);
+
+    }
+}
