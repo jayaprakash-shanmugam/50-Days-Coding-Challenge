@@ -1,0 +1,31 @@
+[PROBLEM] : Given an integer array of size N. Write Program to find square of the array elements.
+Input 1 :
+    Size of array : 4 
+    Array elements: 1 2 3 4 
+Output 1 : 1 4 9 16
+
+SOLUTION [JAVA] : 
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int sum=0;
+        System.out.println("size of array");
+        int size=sc.nextInt();
+        System.out.println("enter array values");
+        int[] arr1=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            arr1[i]=sc.nextInt();
+        }
+        for(int i=0;i<arr1.length;i++)
+        {
+            arr1[i]=arr1[i]*arr1[i];
+        }
+        for(int i=0;i<arr1.length;i++)
+        {
+            System.out.println(arr1[i]);
+        }
+    }
+}
