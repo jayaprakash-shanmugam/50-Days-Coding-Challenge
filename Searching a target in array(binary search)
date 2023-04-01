@@ -1,0 +1,43 @@
+[PROBLEM] : Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return "Target not found".
+Input 1 : Enter size of array : 3 
+        Enter elements : 1 2 3
+        Enter target : 3
+Output 1 : Target found at index : 2
+
+Input 2 : Enter size of array : 3 
+        Enter elements : 1 2 3
+        Enter target : 5
+Output 2 : Target not found
+
+SOLUTION [JAVA] : 
+
+import java.util.*;
+class HelloWorld {
+    public static int search(int[] arr1, int target) 
+    {
+        for(int i=0;i<arr1.length;i++)
+        {
+            if(arr1[i]==target)
+            return i;
+        }    
+        return -1;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("size of array");
+        int size=sc.nextInt();
+        System.out.println("enter array values");
+        int[] arr1=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            arr1[i]=sc.nextInt();
+        }
+        System.out.println("target number");
+        int target=sc.nextInt();
+        int ans=search(arr1,target);
+        if(ans==-1)
+        System.out.println("Target not exist");
+        else
+        System.out.println("Target found at index : " + ans);
+    }
+}
