@@ -1,0 +1,40 @@
+[PROBLEM] : Get an array size and array elements from the user and then find whether the array contains duplicate element or not.
+Input 1 : Enter size of array : 3 
+          Enter elements : 1 2 3
+Output 1 : Duplicate element not found
+
+Input 2 : Enter size of array : 3 
+          Enter elements : 1 2 2
+Output 2 : Duplicate element found
+
+SOLUTION [JAVA] : 
+
+import java.util.*;
+class HelloWorld {
+    public boolean containsDuplicate(int[] nums) 
+    {
+        Arrays.sort(nums);
+        for(int i=0;i<nums.length-1;i++)
+        {
+            if(nums[i]==nums[i+1])
+            return true;
+        }    
+        return false;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("size of array");
+        int size=sc.nextInt();
+        System.out.println("enter array values");
+        int[] arr1=new int[size];
+        for(int i=0;i<size;i++)
+        {
+            arr1[i]=sc.nextInt();
+        }
+        boolean ans=search(arr1,target);
+        if(ans==true)
+        System.out.println("Duplicate element found");
+        else
+        System.out.println("Duplicate element not found");
+    }
+}
